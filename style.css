@@ -1,0 +1,260 @@
+div, span, applet, object, iframe,
+header, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer,  hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, hgroup, menu, nav,header, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+label{
+	position:absolute;
+	left:-9999px;
+}
+
+input,textarea {
+	font:inherit;
+	resize:none;
+	background:#fff;
+	color:#a5a5a5;
+}
+
+.clear {
+	clear:both;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	2.	Document Setup (body, common classes, structure etc)
+/*-----------------------------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'CopseRegular';
+    src: url('fonts/copse/Copse-Regular-webfont.eot');
+    src: url('fonts/copse/Copse-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/copse/Copse-Regular-webfont.woff') format('woff'),
+         url('fonts/copse/Copse-Regular-webfont.ttf') format('truetype'),
+         url('fonts/copse/Copse-Regular-webfont.svg#CopseRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font: 12px/20px 'CopseRegular', CopseRegular, Helvetica, Arial, sans-serif;
+	background:url(images/backgrounds/wood_pattern.png) repeat scroll 0 0;
+	margin:0;
+	padding:0;
+	color:#818181;
+}
+
+#wrapper {
+	width:805px;
+	margin:0 auto;
+}
+
+a {
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+p.copyright {
+	clear:both;
+	text-align:center;
+	margin:15px 0;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.7);
+}
+
+.top-page {
+	background:url(images/top-paper.png) no-repeat left top;
+	width:805px;
+	height:24px;
+}
+
+.content-page {
+	background:url(images/row.png) repeat-y left top;
+	width:805px;
+	height:435px;
+}
+
+.bottom-page {
+	background:url(images/bottom-paper.png) no-repeat left top;
+	width:805px;
+	height:55px;
+}
+
+.top-spiral {
+	background:url(images/spiral.png) no-repeat scroll 0 0;
+	width:38px;
+	height:88px;
+	left:-9px;
+	top:61px;
+}
+
+.bottom-spiral {
+	background:url(images/spiral.png) no-repeat scroll 0 0;
+	width:38px;
+	height:89px;
+	left:-9px;
+	top:61px;
+}
+
+
+h2 {
+	font-family: 'CopseRegular', CopseRegular, Helvetica, Arial, sans-serif;
+	font-size:28px;
+	text-align:center;
+	height:29px;
+	line-height:32px;
+	font-weight:normal;
+	text-shadow: 1px 1px 0px #e1e1e1;
+}
+
+h3 {
+	font-family:Georgia;
+	font-size:18px;
+	font-style:italic;
+	text-align:center;
+	height:29px;
+	line-height:38px;
+	font-weight:normal;
+	color:#a5a5a5;
+}
+
+h4 {
+	font-family:Georgia;
+	font-size:14px;
+	font-style:italic;
+	text-align:center;
+	height:29px;
+	line-height:38px;
+	font-weight:normal;
+	color:#a5a5a5;
+}
+.row {
+	width:100%;
+	height:29px;
+	clear:both;
+}
+.logo{
+	text-align: center;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	3.	Main Content Styles
+/*-----------------------------------------------------------------------------------*/
+
+	/*----- 3.1. Countdown -----*/
+
+
+	/*----- 3.3. Social Links -----*/
+	
+ul.social {
+	position:relative;
+	text-align:center;
+	padding-top:10px;
+}
+
+ul.social li {
+	display:inline;
+	margin:0 13px;
+}
+
+ul.social li a {
+	text-indent:-9999px;
+	width:24px;
+	height:24px;
+	display:inline-block;
+}
+li a.facebook {
+	background:url(images/social/facebook.png) no-repeat scroll center center;
+}
+li a.twitter {
+	background:url(images/social/twitter.png) no-repeat scroll center center;
+}
+li a.youtube {
+	background:url(images/social/youtube.png) no-repeat scroll center center;
+}
+li a.skype {
+	background:url(images/social/skype.png) no-repeat scroll center center;
+}
+li a.dribbble {
+	background:url(images/social/dribbble.png) no-repeat scroll center center;
+}
+
+.bgimg {
+  background-image: url('bg.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin-top: 58%;
+  width: 70%;
+}
